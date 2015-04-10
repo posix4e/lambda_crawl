@@ -1,0 +1,7 @@
+#!/bin/bash
+set -ex
+
+rm -f helloworld.zip 
+zip -r helloworld.zip helloworld.js  node_modules
+aws lambda delete-function --function-name helloworld  || /bin/true
+aws lambda upload-function --function-name helloworld --function-zip helloworld.zip --role arn:aws:iam::107728101346:role/lambda_exec_role  --mode event --handler helloworld.handler --runtime nodejs   --debug

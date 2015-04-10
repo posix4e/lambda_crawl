@@ -1,0 +1,24 @@
+{
+  "name": "crawl",
+  "version": "1.0.0",
+  "description": "An example webcrawler using lambda",
+  "main": "helloworld.js",
+  "dependencies": {
+    "aws-sdk": "^2.1.22",
+    "simplecrawler": "^0.3.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:posix4e/lambda_crawl.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/posix4e/lambda_crawl/issues"
+  },
+  "homepage": "https://github.com/posix4e/lambda_crawl"
+}
